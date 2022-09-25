@@ -16,6 +16,6 @@ echo Successfully Installed !, If the RDP is Dead, Please Rebuild Again!
 echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Unable to get the NGROK tunnel, make sure NGROK_AUTH_TOKEN correct in Settings> Secrets> Repository secret. Maybe your previous VM is still running: https://dashboard.ngrok.com/status/tunnels "
 echo Username: administrator
-echo Password: @Netslutter
+echo Password: @Aryann
 echo Please Login To Your RDP!!
 ping -n 10 127.0.0.1 >nul
